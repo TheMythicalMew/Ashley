@@ -44,6 +44,22 @@ if(command === "help") {
               {
                 name: "melee",
                 value: "The only Smash Brothers game"
+              },
+              {
+                name: "cat",
+                value: "Displays and image of a cat, what did you expect?"
+              },
+              {
+                name: "avatar",
+                value: "Displays your avatar"
+              },
+              {
+                name: "botavatar",
+                value: "Displays Ashley's avatar"
+              },
+              {
+                name: "servericon",
+                value: "Displays the servers' icon"
               }
             ],
             timestamp: new Date(),

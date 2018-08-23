@@ -22,7 +22,15 @@ if(command === "say") {
     message.delete().catch(O_o=>{});  
     message.channel.send(sayMessage);
   }
-
+  if(command === "avatar") {
+    message.channel.sendFile(message.author.avatarURL,'YourAvatar.png')
+}
+ if(command === "botavatar") {
+    message.channel.sendFile(client.user.avatarURL,'BotAvatar.png')
+} 
+ if(command === "servericon") {
+    message.channel.sendFile(message.guild.iconURL,'ServerIcon.png')
+ }
   if(command === "melee") {
     message.channel.send('Warning: This is very loud!')
 }
