@@ -1,0 +1,21 @@
+{
+  "name": "ashley",
+  "version": "1.0.0",
+  "description": "An average bot, duh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Mew",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot-node": "^0.3.11",
+    "discord.js": "^11.4.2",
+    "eris": "^0.7.2",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "moment": "^2.22.2",
+    "randomcolor": "^0.5.3"
+  }
+}
