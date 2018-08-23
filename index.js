@@ -9,7 +9,7 @@ const textanswers = require('./textanswers.js')
 const commands = require('./commands.js')
 const help = require('./help.js')
 
-/*app.get("/", (request, response) => {
+app.get("/", (request, response) => {
     console.log(Date.now() + " Ping Received");
     response.sendStatus(200);
       });
@@ -17,7 +17,7 @@ const help = require('./help.js')
       setInterval(() => {
         http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
       }, 280000);
-*/
+
 
 client.on("ready", () => {
     console.log('Index reggie!');
