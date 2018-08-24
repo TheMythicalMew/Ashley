@@ -11,7 +11,7 @@ const PACKAGE = require('./musicpackage.json');
  * @param {Client} client - The discord.js client.
  * @param {object} options - Options to configure the client bot.
  */
-//stealingjosiacodejk
+//notstealingjosiacode
 
 exports.start = (client, options) => {
   class Music {
