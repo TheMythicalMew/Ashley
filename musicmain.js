@@ -23,7 +23,7 @@ exports.start = (client, options) => {
       this.aliases = new Map();
       this.youtubeKey = (options && options.youtubeKey);
       this.botPrefix = (options && options.prefix) || '^^';
-      this.embedColor = (options && options.embedColor) || 'RED';
+      this.embedColor = (options && options.embedColor) || 'MAROON';
       this.thumbnailType = (options && options.thumbnailType) || "high";
       this.anyoneCanLeave = Boolean((options && options.anyoneCanLeave) || true);
       this.global = (options && options.global) || false;
@@ -32,7 +32,7 @@ exports.start = (client, options) => {
       this.anyoneCanSkip = Boolean((options && options.anyoneCanSkip) || true);
       this.clearInvoker = Boolean((options && options.clearInvoker) || false);
       this.helpCmd = (options && options.helpCmd) || 'musichelp';
-      this.disableHelp = Boolean((options && options.disableHelp) || false);
+      this.disableHelp = Boolean((options && options.disableHelp) || true);
       this.helpHelp = (options && options.helpHelp) || "Shows help for commands.";
       this.helpAlt = (options && options.helpAlt) || [];
       this.playCmd = (options && options.playCmd) || 'play';

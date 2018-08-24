@@ -105,7 +105,78 @@ if(command === "help") {
             }
           }
         });
+        if(command === "help") {
+          message.author.send({embed: {
+              color: 000000,
+              author: {
+                name: ("Ashley"),
+                icon_url: "https://cdn.discordapp.com/attachments/404001721258344450/482240387537305601/Ashley_Bot.png"
+              },
+              title: "Music Commands",
+              url: "https://cdn.discordapp.com/attachments/463351454590042115/482240586187800576/Avatar.png",
+              description: "Learn the text commands!",
+              fields: [{
+                  name: "play (args)",
+                  value: "Searches for a song/video on youtube, or if you want you can paste a URL"
+                },
+                {
+                  name: "join",
+                  value: 'Makes the bot join the voice call'
+                },
+                {
+                  name: "leave",
+                  value: 'Makes the bot leave the voice call'
+                },
+                {
+                  name: "skip",
+                  value: "Skips the current song (currently only admins and the user who requested the song can skip)"
+                },
+                {
+                  name: "np",
+                  value: 'Shows the current song playing'
+                },
+                {
+                  name: "queue",
+                  value: 'Shows the current songs in the queue'
+                },
+                {
+                  name: "pause",
+                  value: 'Pauses the current song'
+                },
+                {
+                  name: "resume",
+                  value: 'Resume the currently paused song'
+                },
+                {
+                  name: "search",
+                  value: 'Searches for a maximum of 10 songs/videos on youtube, use the number (e.g. 1) to select the song'
+                },
+                {
+                  name: "loop",
+                  value: 'Loops the currently playing song'
+                },
+                {
+                  name: "volume",
+                  value: 'Raises or lowers the volume (e.g. ^^volume 100, minimum of 1, maximum of 200)'
+                },
+                {
+                  name: "clearqueue",
+                  value: 'Clears all songs currently in the queue'
+                },
+                {
+                  name: "set",
+                  value: 'Changes music settings for the server'
+                }
+              ],
+              timestamp: new Date(),
+              footer: {
+                icon_url: client.user.avatarURL,
+                text: "© Ashley Mew#4047"
+              }
+            }
+          });
     }
+ }
 }
 });
 
