@@ -3,6 +3,9 @@ const {YTSearcher} = require('ytsearcher');
 const ypi = require('youtube-playlist-info');
 const Discord = require('discord.js');
 const PACKAGE = require('./musicpackage.json');
+const client = new Discord.Client();
+const express = require('express');
+const config = require("./config.json");
 
 /*
  * Takes a discord.js client and turns it into a music bot.
@@ -11,6 +14,7 @@ const PACKAGE = require('./musicpackage.json');
  * @param {Client} client - The discord.js client.
  * @param {object} options - Options to configure the client bot.
  */
+//notstealingjosiacode
 
 exports.start = (client, options) => {
   class Music {
@@ -19,7 +23,7 @@ exports.start = (client, options) => {
       this.aliases = new Map();
       this.youtubeKey = (options && options.youtubeKey);
       this.botPrefix = (options && options.prefix) || '^^';
-      this.embedColor = (options && options.embedColor) || 'GREEN';
+      this.embedColor = (options && options.embedColor) || 'RED';
       this.thumbnailType = (options && options.thumbnailType) || "high";
       this.anyoneCanLeave = Boolean((options && options.anyoneCanLeave) || true);
       this.global = (options && options.global) || false;
