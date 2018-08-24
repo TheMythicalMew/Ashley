@@ -45,4 +45,5 @@ if(command === "say") {
 
  }
 })
+
 client.login(config.token);
