@@ -26,5 +26,12 @@ app.get("/", (request, response) => {
         client.user.setStatus('Online')
         client.user.setActivity('with Dark Magic || ^^help')
     });
+  
+const Music = require('./musicmain.js')
+
+Music.start(client, {
+  youtubeKey: config.youtubeapi
+});
+
 
 client.login(config.token);

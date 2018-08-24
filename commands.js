@@ -56,6 +56,8 @@ if(command === "say") {
         message.channel.send('https://rule34.xxx/index.php?page=post&s=list&tags='+args.join(" "))
     }
 
+  
+
  
 })
 
