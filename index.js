@@ -27,11 +27,24 @@ app.get("/", (request, response) => {
         client.user.setActivity('with Dark Magic || ^^help')
     });
   
+
+client.on('message', (message) => {
+  if(message.content.startsWith('^^forceleave')) {
+    message.channel.send('Forcing a Leave, Bot might not respond for 15 seconds!')
+const voiceChannel = message.member.voiceChannel;
+if (!voiceChannel) {
+  return message.reply(`Please be in a voice channel first!`);
+}
+voiceChannel.join()
+  .then
+      voiceChannel.leave();
+}
+})
+
 const Music = require('./musicmain.js')
 
 Music.start(client, {
   youtubeKey: config.youtubeapi
-});
-
+})
 
 client.login(config.token);
