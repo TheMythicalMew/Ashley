@@ -50,12 +50,13 @@ if(command === "say") {
     strDate += date.getUTCMinutes() + ' minutes, ';
     strDate += date.getUTCSeconds() + ' seconds**';
     message.channel.send(strDate)
+  }
 
     if (command === "r34") {
         message.channel.send('https://rule34.xxx/index.php?page=post&s=list&tags='+args.join(" "))
     }
 
- }
+ 
 })
 
 client.login(config.token);
