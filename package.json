@@ -10,12 +10,14 @@
   "author": "Mew",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.6.1",
     "cleverbot-node": "^0.3.11",
     "discord.js": "^11.4.2",
     "eris": "^0.7.2",
     "express": "^4.16.3",
     "http": "0.0.0",
     "moment": "^2.22.2",
-    "randomcolor": "^0.5.3"
+    "randomcolor": "^0.5.3",
+    "superagent": "^3.8.3"
   }
 }

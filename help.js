@@ -19,9 +19,9 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "help") {
-        message.author.send(`Help Message:\n Prefix: ${prefix} `)
+        message.author.send(`Help Message:\n Default Prefix: ^^ `)
         message.author.send({embed: {
-            color: 700000,
+            color: 000000,
             author: {
               name: ("Ashley"),
               icon_url: "https://cdn.discordapp.com/attachments/404001721258344450/482240387537305601/Ashley_Bot.png"
@@ -44,6 +44,22 @@ if(command === "help") {
               {
                 name: "melee",
                 value: "The only Smash Brothers game"
+              },
+              {
+                name: "cat",
+                value: "Displays and image of a cat, what did you expect?"
+              },
+              {
+                name: "avatar",
+                value: "Displays your avatar"
+              },
+              {
+                name: "botavatar",
+                value: "Displays Ashley's avatar"
+              },
+              {
+                name: "servericon",
+                value: "Displays the servers' icon"
               }
             ],
             timestamp: new Date(),
@@ -68,7 +84,11 @@ if(command === "help") {
             fields: [{
                 name: "1.",
                 value: "Who is Ashley?"
-              }
+              },
+              {
+                name: "2.",
+                value: 'Start a sentence with "FORTNITE" (note, only works with all caps or all lower case)'
+              },
             ],
             timestamp: new Date(),
             footer: {

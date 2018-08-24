@@ -22,7 +22,15 @@ if(command === "say") {
     message.delete().catch(O_o=>{});  
     message.channel.send(sayMessage);
   }
-
+  if(command === "avatar") {
+    message.channel.sendFile(message.author.avatarURL,'YourAvatar.png')
+}
+ if(command === "botavatar") {
+    message.channel.sendFile(client.user.avatarURL,'BotAvatar.png')
+} 
+ if(command === "servericon") {
+    message.channel.sendFile(message.guild.iconURL,'ServerIcon.png')
+ }
   if(command === "melee") {
     message.channel.send('Warning: This is very loud!')
 }
@@ -30,7 +38,7 @@ if(command === "say") {
     message.channel.sendFile('https://cdn.discordapp.com/attachments/404001721258344450/476404324130357258/MELEE.mp3', 'MELEE.mp3')
 }
   if(command === "creators") {
-    message.channel.send('The only creator currently is <@226034191047983114> or Mew#4047')
+    message.channel.send('<@226034191047983114> or Mew#4047 is my creator! And <@318821976372150272> or Josia50#9988 also helps out!')
   }
 
   if(command === "uptime") {
@@ -42,6 +50,10 @@ if(command === "say") {
     strDate += date.getUTCMinutes() + ' minutes, ';
     strDate += date.getUTCSeconds() + ' seconds**';
     message.channel.send(strDate)
+
+    if (command === "r34") {
+        message.channel.send('https://rule34.xxx/index.php?page=post&s=list&tags='+args.join(" "))
+    }
 
  }
 })
