@@ -20,8 +20,10 @@ app.get("/", (request, response) => {
       }, 280000);
 
 
-client.on("ready", () => {
-    console.log('Index reggie!');
-})
+      client.on('ready', () => {
+        console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+        client.user.setStatus('Online')
+        client.user.setActivity('with Dark Magic || ^^help')
+    });
 
 client.login(config.token);
