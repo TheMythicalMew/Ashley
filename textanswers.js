@@ -17,7 +17,7 @@ var messageText = message.content.toUpperCase();
 if (messageText == "WHO IS ASHLEY?") {
   message.channel.send(`Ashley is a character from the "WarioWare" series, if you mean me the bot, I'm just that, a bot`)
 }
-if (messageText == "ASHLEY") {
+if (messageText == "ASHLEY" || messageText == "<@482202511382675483>") {
   message.channel.send(`:eyes:`)
 }
 

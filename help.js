@@ -95,7 +95,7 @@ if(command === "help") {
               },
               {
                 name: "3.",
-                value: "Ashley"
+                value: "Ashley or <@482202511382675483>"
               }
             ],
             timestamp: new Date(),
