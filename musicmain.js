@@ -3,6 +3,13 @@ const {YTSearcher} = require('ytsearcher');
 const ypi = require('youtube-playlist-info');
 const Discord = require('discord.js');
 const PACKAGE = require('./musicpackage.json');
+const client = new Discord.Client();
+const express = require('express');
+const config = require("./config.json");
+
+client.on('ready', () => {
+  console.log('Music is reggie to rock!');
+})
 
 /*
  * Takes a discord.js client and turns it into a music bot.
