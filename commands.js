@@ -42,7 +42,7 @@ if(command === "say") {
   if(command === "creators") {
     message.channel.send('<@226034191047983114> or Mew#4047 is my creator! And <@318821976372150272> or Josia50#9988 also helps out!!')
   }
-  if(command == "ashleyssong") {
+  if(command == "ashleysong") {
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) {
       return message.reply(`Please be in a voice channel first!`);

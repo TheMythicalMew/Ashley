@@ -60,6 +60,10 @@ if(command === "help") {
               {
                 name: "servericon",
                 value: "Displays the servers' icon"
+              },
+              {
+                name: "ashleysong",
+                value: "Plays the Super Smash Bros For Nintendo Wii U and 3DS remix of Ashley's Song from WarioWare: Touched"
               }
             ],
             timestamp: new Date(),
