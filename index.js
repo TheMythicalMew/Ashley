@@ -42,7 +42,7 @@ voiceChannel.join()
 
 Music.start(client, {
   youtubeKey: config.youtubeapi
-});
+})
 
 })
 client.login(config.token);
