@@ -19,7 +19,7 @@ exports.start = (client, options) => {
       this.aliases = new Map();
       this.youtubeKey = (options && options.youtubeKey);
       this.botPrefix = (options && options.prefix) || '^^';
-      this.embedColor = (options && options.embedColor) || 'GREEN';
+      this.embedColor = (options && options.embedColor) || 'RED';
       this.thumbnailType = (options && options.thumbnailType) || "high";
       this.anyoneCanLeave = Boolean((options && options.anyoneCanLeave) || true);
       this.global = (options && options.global) || false;
