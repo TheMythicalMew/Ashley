@@ -39,11 +39,10 @@ voiceChannel.join()
   .then
       voiceChannel.leave();
 }
-    });
 
 Music.start(client, {
   youtubeKey: config.youtubeapi
 });
 
-
+})
 client.login(config.token);
