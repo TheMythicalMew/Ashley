@@ -15,6 +15,10 @@ var messageText = message.content.toUpperCase();
 if (messageText == "WHO IS ASHLEY?") {
   message.channel.send(`Ashley is a character from the "WarioWare" series, if you mean me the bot, I'm just that, a bot`)
 }
+if (messageText == "ASHLEY") {
+  const eyes = client.emojis.find("name", "eyes");
+  message.channel.send(`${eyes}`)
+}
 
 if(message.content.startsWith('FORTNITE') || message.content.startsWith('fortnite')) {
   message.author.send('Did somebody say FORTNITE?')

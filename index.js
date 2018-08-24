@@ -8,6 +8,7 @@ const welcome = require('./welcome.js');
 const textanswers = require('./textanswers.js')
 const commands = require('./commands.js')
 const help = require('./help.js')
+const cats = require('./cats.js')
 
 app.get("/", (request, response) => {
     console.log(Date.now() + " Ping Received");

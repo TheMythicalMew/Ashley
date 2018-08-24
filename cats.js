@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 const superagent = require("superagent");
 
+client.on("ready", () => {
+  console.log('Meow, kitty cats reggie!');
+})
+
 module.exports.run = async (bot,message,args) => {
 
   let {body} = await superagent

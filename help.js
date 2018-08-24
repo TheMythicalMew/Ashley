@@ -89,6 +89,10 @@ if(command === "help") {
                 name: "2.",
                 value: 'Start a sentence with "FORTNITE" (note, only works with all caps or all lower case)'
               },
+              {
+                name: "3.",
+                value: "Ashley"
+              }
             ],
             timestamp: new Date(),
             footer: {
