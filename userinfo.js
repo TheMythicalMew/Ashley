@@ -7,7 +7,7 @@ const fs = require('fs');
 
 
 client.on('ready', () => {
-    console.log('User info reggie!')
+    console.log('User/Server info reggie!')
 })
 
 client.on("message", async message => {
