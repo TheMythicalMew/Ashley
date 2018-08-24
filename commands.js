@@ -3,6 +3,8 @@ const client = new Discord.Client();
 const express = require('express');
 const config = require("./config.json");
 const fs = require('fs');
+const yt = require('ytdl-core');
+const http = require('http');
 
 client.on('ready', () => {
     console.log('Commandos are reggie!');
@@ -40,6 +42,20 @@ if(command === "say") {
   if(command === "creators") {
     message.channel.send('<@226034191047983114> or Mew#4047 is my creator! And <@318821976372150272> or Josia50#9988 also helps out!!')
   }
+  if(command == "ashleyssong") {
+    const voiceChannel = message.member.voiceChannel;
+    if (!voiceChannel) {
+      return message.reply(`Please be in a voice channel first!`);
+    }
+    voiceChannel.join()
+      .then(connnection => {
+        let stream = yt("https://www.youtube.com/watch?v=_u_76yAC5cc", {audioonly: true});
+        const dispatcher = connnection.playStream(stream);
+        dispatcher.on('end', () => {
+          voiceChannel.leave();
+        });
+      });
+    }
 
   if(command === "uptime") {
     var date = new Date(client.uptime);
