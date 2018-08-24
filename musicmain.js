@@ -7,10 +7,6 @@ const client = new Discord.Client();
 const express = require('express');
 const config = require("./config.json");
 
-client.on('ready', () => {
-  console.log('Music is reggie to rock!');
-})
-
 /*
  * Takes a discord.js client and turns it into a music bot.
  * Extra thanks to Rodabaugh (Erik) for helping with some tweaks and ideas.

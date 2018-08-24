@@ -21,11 +21,6 @@ if (messageText == "ASHLEY") {
   message.channel.send(`:eyes:`)
 }
 
-if(message.content.startsWith("^^leave")) {
-  const voiceChannel = message.member.voiceChannel;
-   voiceChannel.leave();
-}
-
 if(message.content.startsWith('FORTNITE') || message.content.startsWith('fortnite')) {
   message.author.send('Did somebody say FORTNITE?')
   message.author.send('https://thumbs.gfycat.com/FineDampGecko-size_restricted.gif')
