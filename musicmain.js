@@ -64,7 +64,7 @@ exports.start = (client, options) => {
       this.volumeHelp = (options && options.volumeHelp) || "Adjusts the volume of the bot.";
       this.volumeAlt = (options && options.volumeAlt) || [];
       this.leaveCmd = (options && options.leaveCmd) || 'leave';
-      this.disableLeave = Boolean((options && options.disableLeave) || false);
+      this.disableLeave = Boolean((options && options.disableLeave) || true);
       this.leaveHelp = (options && options.leaveHelp) || "Leave and clear the queue.";
       this.leaveAlt = (options && options.leaveAlt) || [];
       this.clearCmd = (options && options.clearCmd) || 'clearqueue';

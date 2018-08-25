@@ -17,7 +17,7 @@ client.on("message", async message => {
 if(command === "help") {
         message.author.send(`Help Message:\n Default Prefix: ^^ `)
         message.author.send({embed: {
-            color: 3447003,
+            color: 000000,
             author: {
               name: ("Ashley"),
               icon_url: "https://cdn.discordapp.com/attachments/404001721258344450/482240387537305601/Ashley_Bot.png"
@@ -73,7 +73,7 @@ if(command === "help") {
 
         if(command === "help") {
         message.author.send({embed: {
-            color: 3447003,
+            color: 000000,
             author: {
               name: ("Ashley"),
               icon_url: "https://cdn.discordapp.com/attachments/463351454590042115/482240586187800576/Avatar.png"
