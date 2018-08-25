@@ -1,7 +1,7 @@
 {
     "prefix": "^^",
     "modlogchannel": "log",
-    "modrole": "Moderator",
+    "modrole": "Speaker",
     "adminrole": "0wNeR",
     "welcomechannel": "general",
     "reportchannel": "suggestions",
