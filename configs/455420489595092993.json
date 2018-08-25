@@ -3,7 +3,7 @@
     "modlogchannel": "log",
     "modrole": "Utopian staff",
     "adminrole": "Emperor",
-    "welcomechannel": "general",
+    "welcomechannel": "new-members",
     "reportchannel": "reports",
     "extracommands": "true",
     "ruleschannel": "rules",
