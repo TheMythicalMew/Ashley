@@ -14,6 +14,10 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
+  if (command === "help") {
+    message.channel.send(`Sent you a DM with the help message!`)
+  }
+
 if(command === "help") {
         message.author.send(`Help Message:\n Default Prefix: ^^ `)
         message.author.send({embed: {
