@@ -1,0 +1,11 @@
+{
+    "prefix": "^^",
+    "modlogchannel": "log",
+    "modrole": "Moderator",
+    "adminrole": "0wNeR",
+    "welcomechannel": "general",
+    "reportchannel": "suggestions",
+    "extracommands": "true",
+    "ruleschannel": "rules",
+    "guildname": "Drunkentavern"
+}
