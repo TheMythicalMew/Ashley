@@ -22,7 +22,12 @@ if(command === "say") {
     message.channel.send(sayMessage);
   }
   if(command === "avatar") {
-    message.channel.sendFile(message.author.avatarURL,'YourAvatar.png')
+    var user = message.mentions.users.first()
+    if(!user) {
+   message.channel.sendFile(message.author.avatarURL,'YourAvatar.png')
+}else{
+    message.channel.sendFile(user.avatarURL, 'TheirAvatar.png')
+ }
 }
  if(command === "botavatar") {
     message.channel.sendFile(client.user.avatarURL,'BotAvatar.png')
