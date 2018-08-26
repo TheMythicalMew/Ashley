@@ -5,11 +5,12 @@ const app = express();
 const http = require('http');
 const config = require('./config.json');
 const welcome = require('./welcome.js');
-const textanswers = require('./textanswers.js')
-const commands = require('./commands.js')
-const help = require('./help.js')
-const cats = require('./cats.js')
-const userinfo = require('./userinfo.js')
+const textanswers = require('./textanswers.js');
+const commands = require('./commands.js');
+const help = require('./help.js');
+const cats = require('./cats.js');
+const userinfo = require('./userinfo.js');
+const yougotadm = require('./yougotadm.js');
 
 app.get("/", (request, response) => {
     console.log(Date.now() + " Ping Received");

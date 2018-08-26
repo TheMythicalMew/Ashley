@@ -4,6 +4,10 @@ const client = new discord.Client();
 const Cleverbot = require("cleverbot-node");
 const clbot = new Cleverbot;
 
+client.on('ready', () => {
+  console.log("DM message is reggie!");
+})
+
 client.on("message", message => {
   if (message.author.bot) return;
   if (message.channel.type === "dm") {
