@@ -21,7 +21,7 @@ if (messageText == "ASHLEY" || messageText == "<@482202511382675483>") {
   message.channel.send(`:eyes:`)
 }
 
-if(message.content.startsWith('FORTNITE') || message.content.startsWith('fortnite')) {
+if(message.content.startsWith('FORTNITE') || message.content.startsWith('fortnite') || message.content.startsWith('FoRtNiTe') || message.content.startsWith('Fortnite') || message.content.startsWith('fORTNITE') || message.content.startsWith('fOrTnItE')) {
   message.author.send('Did somebody say FORTNITE?')
   message.author.send('https://thumbs.gfycat.com/FineDampGecko-size_restricted.gif')
 }
