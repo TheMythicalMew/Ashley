@@ -1,26 +1,23 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client();
-const superagent = require("superagent");
-const config = require('./config.json');
+const express = require('express');
+const config = require("./config.json");
+const fs = require('fs');
+const yt = require('ytdl-core');
+const http = require('http');
 
-client.on("ready", () => {
-  console.log('Meow, kitty cats reggie!');
+client.on('ready', () => {
+    console.log('Meow, kitty cats reggie!');
 })
 
-module.exports.run = async (bot,message,args) => {
+client.on("message", async message => {
+    if(message.content.indexOf(config.prefix) !== 0) return;
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
 
-  let {body} = await superagent
-  .get(`http://aws.random.cat//meow.php`);
-
-  let catembed = new Discord.RichEmbed()
-  .setColor("8500000")
-  .setTitle("Random cat image")
-  .setImage(body.file);
-
-  message.channel.send(catembed);
-  message.delete().catch(O_o=>{});
-
-
-}
+    if(command === "cat") {
+      message.channel.sendFile('http://aws.random.cat//meow.php','Cat.jpg')
+  }
+})
 
 client.login(config.token);
