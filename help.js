@@ -47,7 +47,7 @@ if(command === "help") {
               },
               {
                 name: "cat",
-                value: "Displays and image of a cat, what did you expect?"
+                value: "Displays and image of a cat, what did you expect? (WIP)"
               },
               {
                 name: "avatar",
