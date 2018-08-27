@@ -37,24 +37,12 @@ if (!voiceChannel) {
   return message.reply(`Please be in a voice channel first!`);
 }
 voiceChannel.join()
-  .then
+  .then()
       voiceChannel.leave();
 }
 })
 
 const Music = require('./musicmain.js')
-
-client.on('message', (message) => {
-  if(message.content.startsWith('^^leave')) {
-const voiceChannel = message.member.voiceChannel;
-if (!voiceChannel) {
-  return message.reply(`Please be in a voice channel first!`);
-}
-voiceChannel.join()
-  .then
-      voiceChannel.leave();
-}
-})
 
 Music.start(client, {
   youtubeKey: config.youtubeapi
