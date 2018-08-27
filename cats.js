@@ -16,7 +16,7 @@ client.on("message", async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "cat") {
-      message.channel.sendFile('http://aws.random.cat//meow.php','Cat.jpg')
+      message.channel.send('http://aws.random.cat//meow.php')
   }
 })
 
