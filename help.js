@@ -95,12 +95,24 @@ if(command === "help") {
               },
               {
                 name: "2.",
-                value: 'Start a sentence with "FORTNITE" (note, only works with all caps or all lower case)'
+                value: 'Start a sentence with the word"FORTNITE"'
               },
               {
                 name: "3.",
                 value: "Ashley or <@482202511382675483>"
-              }
+              },
+              {
+                name: "4.",
+                value: 'What is Mew Bot?'
+              },
+              {
+                name: "5.",
+                value: 'Mew Bot'
+              },
+              {
+                name: "6.",
+                value: 'Hey Mew, help'
+              },
             ],
             timestamp: new Date(),
             footer: {
