@@ -29,6 +29,9 @@ if(command === "say") {
     message.channel.sendFile(user.avatarURL, 'TheirAvatar.png')
  }
 }
+if(command === "ping") {
+  message.channel.send(`Pong! I'm up and running!`)
+}
  if(command === "botavatar") {
     message.channel.sendFile(client.user.avatarURL,'BotAvatar.png')
 } 

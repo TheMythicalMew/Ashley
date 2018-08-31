@@ -62,6 +62,10 @@ if(command === "help") {
                 value: "Displays the servers' icon"
               },
               {
+                name: "ping",
+                value: "Checks if the bot is online, although if you just used help I imagine it is..."
+              },
+              {
                 name: "ashleysong",
                 value: "Plays the Super Smash Bros For Nintendo Wii U and 3DS remix of Ashley's Song from WarioWare: Touched"
               }
