@@ -29,6 +29,11 @@ if(command === "say") {
     message.channel.sendFile(user.avatarURL, 'TheirAvatar.png')
  }
 }
+if(command === "social") {
+  message.channel.send(`Here are a list of <@226034191047983114> or Mew#4047's social accounts!`)
+  message.channel.send(`Twitter: https://twitter.com/The_MythicalMew`)
+  message.channel.send(`YouTube: https://twitter.com/The_MythicalMew`)
+}
 if(command === "ping") {
   message.channel.send(`Pong! I'm up and running!`)
 }
